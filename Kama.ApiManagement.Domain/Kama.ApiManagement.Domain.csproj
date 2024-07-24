@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Kama.ApiManagement\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kama.ApiManagement.Core.DataSource\Kama.ApiManagement.Core.DataSource.csproj" />
+    <ProjectReference Include="..\Kama.ApiManagement.Core.Model\Kama.ApiManagement.Core.Model.csproj" />
+    <ProjectReference Include="..\Kama.ApiManagement.Core.Service\Kama.ApiManagement.Core.Service.csproj" />
+    <ProjectReference Include="..\Kama.ApiManagement.Core\Kama.ApiManagement.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kama.AppCore">
+      <HintPath>..\Dlls\Kama.AppCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Kama.Library.Helper">
+      <HintPath>..\Dlls\Kama.Library.Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

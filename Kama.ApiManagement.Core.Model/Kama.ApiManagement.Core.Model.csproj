@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Kama.ApiManagement\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Kama.AppCore">
+      <HintPath>..\Dlls\Kama.AppCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

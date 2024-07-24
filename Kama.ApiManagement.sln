@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{44C86F38-2E9E-48E5-B08C-C9F63215FDA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement", "Kama.ApiManagement\Kama.ApiManagement.csproj", "{6D25F29A-3521-4F8B-AF27-7AF4FC75140E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{31A5E137-BB43-45F3-A6DE-3EDAB11F51A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9D935C10-9064-417E-88C6-36ACCED57FBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Core", "Kama.ApiManagement.Core\Kama.ApiManagement.Core.csproj", "{103CC484-CBDC-4EE6-94AA-E8D5B85C8361}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Core.DataSource", "Kama.ApiManagement.Core.DataSource\Kama.ApiManagement.Core.DataSource.csproj", "{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Core.Model", "Kama.ApiManagement.Core.Model\Kama.ApiManagement.Core.Model.csproj", "{FD08B4FA-A370-4FD4-8188-8889B6F19274}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Core.Service", "Kama.ApiManagement.Core.Service\Kama.ApiManagement.Core.Service.csproj", "{8AA49BEA-E755-4D81-88A0-10F823EC2E27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{BC24326C-6108-45B0-A9C4-D477513143E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5C3DAB3B-3608-4F83-8089-9A14B9E0CC0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Domain", "Kama.ApiManagement.Domain\Kama.ApiManagement.Domain.csproj", "{05092876-90AD-49EE-B471-045A0F67F5E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Infrastructure.DAL", "Kama.ApiManagement.DAL\Kama.ApiManagement.Infrastructure.DAL.csproj", "{6FF40E0D-313B-4B39-BB22-538A26A0EA6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{F9E9940B-E125-434E-ADE6-9166E4665D19}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseModel.bat = DatabaseModel.bat
+		NewApiClients.bat = NewApiClients.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiClient", "ApiClient", "{73891C7D-2788-45CF-9DFD-86A471F2EFF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NetCore", ".NetCore", "{7B394FC1-B217-4570-B8CF-88D25D5B1A5B}"
+	ProjectSection(SolutionItems) = preProject
+		ApiClient\.NetCore\Kama.ApiManagement.ApiClient.cs = ApiClient\.NetCore\Kama.ApiManagement.ApiClient.cs
+		ApiClient\.NetCore\Kama.ApiManagement.Core.Model.cs = ApiClient\.NetCore\Kama.ApiManagement.Core.Model.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NetFrameWork", ".NetFrameWork", "{3C87375B-13FF-4A03-8C79-784DDFF48294}"
+	ProjectSection(SolutionItems) = preProject
+		ApiClient\.NetFrameWork\Kama.ApiManagement.ApiClient.cs = ApiClient\.NetFrameWork\Kama.ApiManagement.ApiClient.cs
+		ApiClient\.NetFrameWork\Kama.ApiManagement.Core.Model.cs = ApiClient\.NetFrameWork\Kama.ApiManagement.Core.Model.cs
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kama.ApiManagement.Infrastructure.Log", "Kama.ApiManagement.Log\Kama.ApiManagement.Infrastructure.Log.csproj", "{4EB45F59-0446-478B-BFFD-4603BAEEC586}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D25F29A-3521-4F8B-AF27-7AF4FC75140E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D25F29A-3521-4F8B-AF27-7AF4FC75140E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D25F29A-3521-4F8B-AF27-7AF4FC75140E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D25F29A-3521-4F8B-AF27-7AF4FC75140E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103CC484-CBDC-4EE6-94AA-E8D5B85C8361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103CC484-CBDC-4EE6-94AA-E8D5B85C8361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103CC484-CBDC-4EE6-94AA-E8D5B85C8361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103CC484-CBDC-4EE6-94AA-E8D5B85C8361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD08B4FA-A370-4FD4-8188-8889B6F19274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD08B4FA-A370-4FD4-8188-8889B6F19274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD08B4FA-A370-4FD4-8188-8889B6F19274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD08B4FA-A370-4FD4-8188-8889B6F19274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA49BEA-E755-4D81-88A0-10F823EC2E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA49BEA-E755-4D81-88A0-10F823EC2E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA49BEA-E755-4D81-88A0-10F823EC2E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA49BEA-E755-4D81-88A0-10F823EC2E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05092876-90AD-49EE-B471-045A0F67F5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05092876-90AD-49EE-B471-045A0F67F5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05092876-90AD-49EE-B471-045A0F67F5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05092876-90AD-49EE-B471-045A0F67F5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF40E0D-313B-4B39-BB22-538A26A0EA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF40E0D-313B-4B39-BB22-538A26A0EA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF40E0D-313B-4B39-BB22-538A26A0EA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF40E0D-313B-4B39-BB22-538A26A0EA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB45F59-0446-478B-BFFD-4603BAEEC586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB45F59-0446-478B-BFFD-4603BAEEC586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB45F59-0446-478B-BFFD-4603BAEEC586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB45F59-0446-478B-BFFD-4603BAEEC586}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D25F29A-3521-4F8B-AF27-7AF4FC75140E} = {31A5E137-BB43-45F3-A6DE-3EDAB11F51A2}
+		{31A5E137-BB43-45F3-A6DE-3EDAB11F51A2} = {44C86F38-2E9E-48E5-B08C-C9F63215FDA7}
+		{9D935C10-9064-417E-88C6-36ACCED57FBA} = {44C86F38-2E9E-48E5-B08C-C9F63215FDA7}
+		{103CC484-CBDC-4EE6-94AA-E8D5B85C8361} = {9D935C10-9064-417E-88C6-36ACCED57FBA}
+		{67E7AEC1-E259-474E-A7D4-C3DCC20A5DE2} = {9D935C10-9064-417E-88C6-36ACCED57FBA}
+		{FD08B4FA-A370-4FD4-8188-8889B6F19274} = {9D935C10-9064-417E-88C6-36ACCED57FBA}
+		{8AA49BEA-E755-4D81-88A0-10F823EC2E27} = {9D935C10-9064-417E-88C6-36ACCED57FBA}
+		{BC24326C-6108-45B0-A9C4-D477513143E5} = {44C86F38-2E9E-48E5-B08C-C9F63215FDA7}
+		{5C3DAB3B-3608-4F83-8089-9A14B9E0CC0F} = {44C86F38-2E9E-48E5-B08C-C9F63215FDA7}
+		{05092876-90AD-49EE-B471-045A0F67F5E5} = {BC24326C-6108-45B0-A9C4-D477513143E5}
+		{6FF40E0D-313B-4B39-BB22-538A26A0EA6E} = {5C3DAB3B-3608-4F83-8089-9A14B9E0CC0F}
+		{7B394FC1-B217-4570-B8CF-88D25D5B1A5B} = {73891C7D-2788-45CF-9DFD-86A471F2EFF9}
+		{3C87375B-13FF-4A03-8C79-784DDFF48294} = {73891C7D-2788-45CF-9DFD-86A471F2EFF9}
+		{4EB45F59-0446-478B-BFFD-4603BAEEC586} = {5C3DAB3B-3608-4F83-8089-9A14B9E0CC0F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93EF075D-CAAE-4B30-A686-C6BA5A213FD0}
+	EndGlobalSection
+EndGlobal

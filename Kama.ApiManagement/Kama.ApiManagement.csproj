@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>bin\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="KamaTools\**" />
+		<Content Remove="KamaTools\**" />
+		<EmbeddedResource Remove="KamaTools\**" />
+		<None Remove="KamaTools\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+		<PackageReference Include="Shyjus.BrowserDetector" Version="2.0.0">
+		  <TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Files\TemporaryFiles\" />
+		<Folder Include="Files\Temp\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Kama.ApiManagement.Core.Model\Kama.ApiManagement.Core.Model.csproj" />
+	  <ProjectReference Include="..\Kama.ApiManagement.Core.Service\Kama.ApiManagement.Core.Service.csproj" />
+	  <ProjectReference Include="..\Kama.ApiManagement.DAL\Kama.ApiManagement.Infrastructure.DAL.csproj" />
+	  <ProjectReference Include="..\Kama.ApiManagement.Domain\Kama.ApiManagement.Domain.csproj" />
+	  <ProjectReference Include="..\Kama.ApiManagement.Log\Kama.ApiManagement.Infrastructure.Log.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Kama.AppCore">
+			<HintPath>..\Dlls\Kama.AppCore.dll</HintPath>
+		</Reference>
+		<Reference Include="Kama.Library.Helper">
+			<HintPath>..\Dlls\Kama.Library.Helper.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>

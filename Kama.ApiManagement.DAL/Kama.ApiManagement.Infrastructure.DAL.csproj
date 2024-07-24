@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Kama.ApiManagement\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kama.AppCore">
+      <HintPath>..\Dlls\Kama.AppCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Kama.DatabaseModel">
+      <HintPath>..\Dlls\Kama.DatabaseModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Kama.Library.Helper">
+      <HintPath>..\Dlls\Kama.Library.Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DatabaseScript\Functions\" />
+    <Folder Include="DatabaseScript\Updates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kama.ApiManagement.Core.DataSource\Kama.ApiManagement.Core.DataSource.csproj" />
+    <ProjectReference Include="..\Kama.ApiManagement.Core.Model\Kama.ApiManagement.Core.Model.csproj" />
+    <ProjectReference Include="..\Kama.ApiManagement.Core\Kama.ApiManagement.Core.csproj" />
+  </ItemGroup>
+
+</Project>
